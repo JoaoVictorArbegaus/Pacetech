@@ -3,10 +3,10 @@ algoritmo "semnome"
 var
 salario, aumento: real
 inicio
-Escreval ("Insira seu sal·rio atual")
+Escreval ("Insira seu sal√°rio atual")
 leia (salario)
 aumento <- salario * 1.3
-Escreval ("seu sal·rio agora È: ")
+Escreval ("seu sal√°rio agora √©: ")
 Escreval (aumento)
 
 
