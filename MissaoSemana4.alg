@@ -10,51 +10,51 @@ Escreval("Bem vindo ao conversor Pace 1.0")
 continuar <- verdadeiro
 
 repita
-   Escreval("Informe a opção que deseja: ")
+   Escreval("Informe a opÃ§Ã£o que deseja: ")
    Escreval(" ")
    Escreval(" 1-Celsius para Fahrenheit")
    Escreval(" 2-Fahrenheit para Celsius")
-   Escreval(" 3-Reais(R$) para Dólar(US$)")
-   Escreval(" 4-Dólar(US$) para Reais(R$)")
+   Escreval(" 3-Reais(R$) para DÃ³lar(US$)")
+   Escreval(" 4-DÃ³lar(US$) para Reais(R$)")
    Escreval(" 5-Encerrar")
    Escreval(" ")
-   Escreval("Digite um numero correspondente a opção preferida: ")
+   Escreval("Digite um numero correspondente a opÃ§Ã£o preferida: ")
    leia(opcaoA)
    limpatela
    escolha opcaoA
 
    caso "1"
-      Escreval("Digite a temperatura em °C: ")
+      Escreval("Digite a temperatura em Â°C: ")
       leia (tempC)
       tempF <- (tempC * 9/5) + 32
-      escreval(tempC, "°C equivale a ", tempF:2:2, "ºF")
+      escreval(tempC, "Â°C equivale a ", tempF:2:2, "ÂºF")
    caso "2"
-      Escreval("Digite a temperatura em ºF: ")
+      Escreval("Digite a temperatura em ÂºF: ")
       leia(tempF)
       tempC <- (tempF - 32) * 5/9
-      escreval(tempF, "ºF equivale a ", tempC:2:2, "ºC")
+      escreval(tempF, "ÂºF equivale a ", tempC:2:2, "ÂºC")
    caso "3"
-      Escreval("Digite a cotação do dólar atual:")
+      Escreval("Digite a cotaÃ§Ã£o do dÃ³lar atual:")
       leia (cotacao)
       escreva("Digite o valor em reais a ser convertido: ")
       leia(valorR)
       valorD <- valorR / cotacao
-      escreval("Com R$", valorR:2:2, " você terá US$", valorD:2:2)
+      escreval("Com R$", valorR:2:2, " vocÃª terÃ¡ US$", valorD:2:2)
    caso "4"
-      Escreval("Digite a cotação do dólar atual:")
+      Escreval("Digite a cotaÃ§Ã£o do dÃ³lar atual:")
       leia (cotacao)
-      escreva("Digite o valor em dólares a ser convertido: ")
+      escreva("Digite o valor em dÃ³lares a ser convertido: ")
       leia(valorD)
       valorR <- valorD * cotacao
-      escreval("Com US$", valorD:2:2, " você terá R$", valorR:2:2)
+      escreval("Com US$", valorD:2:2, " vocÃª terÃ¡ R$", valorR:2:2)
    caso "5"
       interrompa
    outrocaso
       limpatela
-      escreval("Digite uma opção válida!")
+      escreval("Digite uma opÃ§Ã£o vÃ¡lida!")
    fimescolha
    repita
-      Escreval("Gostaria de voltar ao menu de opções? (Sim (s) ou Não (n) ")
+      Escreval("Gostaria de voltar ao menu de opÃ§Ãµes? (Sim (s) ou NÃ£o (n) ")
       leia(opcaoB)
    ate (opcaoB = "n") ou (opcaoB = "s")
    se (opcaoB = "n") entao
